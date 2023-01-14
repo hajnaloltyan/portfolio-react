@@ -9,6 +9,7 @@ import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { Link } from 'react-scroll';
 import Logo from '../../assets/logo5.png';
+import sections from '../../sections';
 
 
 export const Navbar: FC = () => {
@@ -29,35 +30,13 @@ export const Navbar: FC = () => {
 
       {/* Menu */}
       <ul className='hidden text-xl font-bold md:flex'>
-        <li>
-          <Link to='home' smooth={true} duration={700}>
-            Home
-          </Link>
-        </li>
-        
-        <li>
-          <Link to='about' smooth={true} duration={700}>
-            About
-          </Link>
-        </li>
-        
-        <li>
-          <Link to='skills' smooth={true} duration={700}>
-            Skills
-          </Link>
-        </li>
-
-        <li>
-          <Link to='work' smooth={true} duration={700}>
-            Work
-          </Link>
-        </li>
-        
-        <li>
-          <Link to='contact' smooth={true} duration={700}>
-            Contact
-          </Link>
-        </li>
+        {sections.map(({ id, title }) => (
+          <li key={id}>
+            <Link to={id} smooth={true} duration={700}>
+              {title}
+            </Link>
+          </li>
+        ))}
       </ul>
 
       {/* Hamburger */}
@@ -72,11 +51,13 @@ export const Navbar: FC = () => {
         ? 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'
         : 'hidden'
       }>
-        <li className='py-6 text-3xl'>Home</li>
-        <li className='py-6 text-3xl'>About</li>
-        <li className='py-6 text-3xl'>Skills</li>
-        <li className='py-6 text-3xl'>Work</li>
-        <li className='py-6 text-3xl'>Contact</li>
+        {sections.map(({ id, title }) => (
+          <li className='py-6 text-3xl' key={id}>
+            <Link to={id} smooth={true} duration={700}>
+              {title}
+            </Link>
+          </li>
+        ))}
       </ul>
 
       {/* Social icons */}
@@ -104,7 +85,7 @@ export const Navbar: FC = () => {
           </a>
         </li>
 
-        <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] duration-300 bg-green-600 hover:ml-[-10px]'>
+        <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] duration-300 bg-green-700 hover:ml-[-10px]'>
           <a 
             href='/' 
             className='w-full flex justify-between items-center text-white ml-[15px]'
@@ -113,11 +94,11 @@ export const Navbar: FC = () => {
           </a>
         </li>
 
-        <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] duration-300 bg-gray-600 hover:ml-[-10px]'>
+        <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] duration-300 bg-pink-700 hover:ml-[-10px]'>
           <a 
             href='https://drive.google.com/file/d/1mvD1pXQ7yTuaAlwBDg8Feg6qT-41Pk_9/view?usp=sharing'
             className='w-full flex justify-between items-center text-white ml-[15px]'
-            target='pdf-frame'
+            target='_blank'
             rel="noreferrer"
           >
             Resume <BsFillPersonLinesFill size={30} />
