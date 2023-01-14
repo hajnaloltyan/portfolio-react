@@ -86,6 +86,8 @@ export const Navbar: FC = () => {
           <a 
             href='https://www.linkedin.com/in/hajnalka-oltyan/' 
             className='w-full flex justify-between items-center text-white ml-[15px]'
+            target='_blank'
+            rel="noreferrer"
           >
             LinkedIn <FaLinkedin size={30} />
           </a>
@@ -95,6 +97,8 @@ export const Navbar: FC = () => {
           <a 
             href='https://github.com/hajnaloltyan' 
             className='w-full flex justify-between items-center text-white ml-[15px]'
+            target='_blank'
+            rel="noreferrer"
           >
             GitHub <FaGithub size={30} />
           </a>
@@ -111,9 +115,10 @@ export const Navbar: FC = () => {
 
         <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] duration-300 bg-gray-600 hover:ml-[-10px]'>
           <a 
-            href='../../assets/Hajnalka_Oltyan_CV.pdf'
+            href='./Hajnalka_Oltyan_CV.pdf'
             className='w-full flex justify-between items-center text-white ml-[15px]'
-            download
+            target='pdf-frame'
+            rel="noreferrer"
           >
             Resume <BsFillPersonLinesFill size={30} />
           </a>
