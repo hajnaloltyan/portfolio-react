@@ -115,7 +115,7 @@ export const Navbar: FC = () => {
 
         <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] duration-300 bg-gray-600 hover:ml-[-10px]'>
           <a 
-            href='./Hajnalka_Oltyan_CV.pdf'
+            href='https://drive.google.com/file/d/1mvD1pXQ7yTuaAlwBDg8Feg6qT-41Pk_9/view?usp=sharing'
             className='w-full flex justify-between items-center text-white ml-[15px]'
             target='pdf-frame'
             rel="noreferrer"
