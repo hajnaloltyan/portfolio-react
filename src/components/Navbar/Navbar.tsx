@@ -21,11 +21,13 @@ export const Navbar: FC = () => {
     <div className='fixed w-full h-[90px] flex justify-between items-center px-8 pt-3 bg-[#0a192f] text-gray-300 lg:px-40'>
       {/* Logo */}
       <div className='z-10'>
-        <img 
-          src={Logo} 
-          alt='Logo' 
-          style={{ width: '90px' }}
-        />
+        <Link to='home' smooth={true} duration={700}>
+          <img 
+            src={Logo} 
+            alt='Logo' 
+            style={{ width: '90px', cursor: 'pointer' }}
+          />
+        </Link>
       </div>
 
       {/* Menu */}
