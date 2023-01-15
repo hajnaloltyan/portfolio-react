@@ -53,7 +53,12 @@ export const Navbar: FC = () => {
       }>
         {sections.map(({ id, title }) => (
           <li className='py-6 text-3xl' key={id}>
-            <Link to={id} smooth={true} duration={700}>
+            <Link 
+              to={id} 
+              smooth={true} 
+              duration={700}
+              onClick={handleMenuClick}
+            >
               {title}
             </Link>
           </li>
@@ -86,12 +91,14 @@ export const Navbar: FC = () => {
         </li>
 
         <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] duration-300 bg-green-700 hover:ml-[-10px]'>
-          <a 
-            href='/' 
+          <Link 
+            to='contact' 
+            smooth={true} 
+            duration={700} 
             className='w-full flex justify-between items-center text-white ml-[15px]'
           >
             E-mail <HiOutlineMail size={30} />
-          </a>
+          </Link>
         </li>
 
         <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] duration-300 bg-pink-700 hover:ml-[-10px]'>

@@ -6,7 +6,7 @@ export const Work: FC = () => {
       {/* Container */}
       <div className='flex flex-col justify-center w-full h-full px-[10%]'>
         <article className='pb-8'>
-          <h2 className='text-5xl font-bold inline border-b-4 border-pink-600'>
+          <h2 className='text-5xl font-bold inline border-b-4 border-pink-700'>
             Work
           </h2>
         </article>

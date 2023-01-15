@@ -1,12 +1,13 @@
 import { FC } from 'react';
 import { HiArrowNarrowRight } from 'react-icons/hi';
+import { Link } from 'react-scroll';
 
 export const Home: FC = () => {
   return (
     <section id='home' className='w-full h-screen bg-[#0a192f] px-[10%]'>
       {/* Container */}
       <article className='mx-auto gap-2 flex flex-col justify-center h-full px-[10%]'>
-        <h3 className='text-pink-600 text-xl'>
+        <h3 className='text-pink-700 text-xl'>
           Hello, My name is
         </h3>
 
@@ -24,9 +25,11 @@ export const Home: FC = () => {
 
         <div>
           <button 
-            className='text-white border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600'
+            className='text-white border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-700 hover:border-pink-700'
           >
-            View Work <HiArrowNarrowRight className='ml-3'/>
+            <Link to='work' smooth={true} duration={700}>
+              View Work <HiArrowNarrowRight className='ml-3 inline'/>
+            </Link>
           </button>
         </div>
       </article>
