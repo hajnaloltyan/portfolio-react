@@ -18,7 +18,7 @@ export const Navbar: FC = () => {
   const handleMenuClick = () => setShowMenu(!showMenu);
 
   return (
-    <div className='fixed w-full h-[90px] flex justify-between items-center px-8 pt-3 bg-[#0a192f] text-gray-300 lg:px-40'>
+    <div className='fixed w-full h-[80px] flex justify-between items-center px-8 pt-3 bg-[#0a192f] text-gray-300 lg:px-40'>
       {/* Logo */}
       <div className='z-10'>
         <Link to='home' smooth={true} duration={700}>
@@ -111,6 +111,54 @@ export const Navbar: FC = () => {
             rel="noreferrer"
           >
             Resume <BsFillPersonLinesFill size={30} />
+          </a>
+        </li>
+      </ul>
+
+      {/* Mobile Social icons */}
+
+      <ul className='flex fixed bottom-0 left-0 right-0 md:hidden'>
+        <li className='h-[50px] flex flex-auto items-center bg-[#0077B5]'>
+          <a 
+            href='https://www.linkedin.com/in/hajnalka-oltyan/' 
+            className='w-full flex justify-center items-center text-white'
+            target='_blank'
+            rel="noreferrer"
+          >
+            <FaLinkedin size={30} />
+          </a>
+        </li>
+
+        <li className='h-[50px] flex flex-auto items-center bg-black'>
+          <a 
+            href='https://github.com/hajnaloltyan' 
+            className='w-full flex justify-center items-center text-white'
+            target='_blank'
+            rel="noreferrer"
+          >
+            <FaGithub size={30} />
+          </a>
+        </li>
+
+        <li className='h-[50px] flex flex-auto items-center bg-green-700'>
+          <Link 
+            to='contact' 
+            smooth={true} 
+            duration={700} 
+            className='w-full flex justify-center items-center text-white'
+          >
+            <HiOutlineMail size={30} />
+          </Link>
+        </li>
+
+        <li className='h-[50px] flex flex-auto items-center bg-pink-700'>
+          <a 
+            href='https://drive.google.com/file/d/1mvD1pXQ7yTuaAlwBDg8Feg6qT-41Pk_9/view?usp=sharing'
+            className='w-full flex justify-center items-center text-white'
+            target='_blank'
+            rel="noreferrer"
+          >
+            <BsFillPersonLinesFill size={30} />
           </a>
         </li>
       </ul>
