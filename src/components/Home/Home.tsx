@@ -25,7 +25,7 @@ export const Home: FC = () => {
 
         <div>
           <button 
-            className='text-white border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-700 hover:border-pink-700'
+            className='text-white border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-700 border-pink-700'
           >
             <Link to='work' smooth={true} duration={700}>
               View Work <HiArrowNarrowRight className='ml-3 inline'/>

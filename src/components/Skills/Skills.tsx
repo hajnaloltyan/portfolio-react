@@ -13,7 +13,7 @@ export const Skills: FC = () => {
       {/* Container */}
       <div className='flex flex-col justify-center w-full h-full px-[10%]'>
         <article className='pb-8'>
-          <h2 className='text-5xl font-bold inline border-b-4 border-pink-700'>
+          <h2 className='text-3xl sm:text-5xl font-bold inline border-b-4 border-pink-700'>
             Skills
           </h2>
         </article>

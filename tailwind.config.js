@@ -9,6 +9,7 @@ module.exports = {
       backgroundImage: {
         'mybike-image': 'url("./assets/MyBike.png")',
         'portfolio-image': 'url("./assets/Portfolio.png")',
+        'tictactoe-image': 'url("./assets/TicTacToe.png")',
       }
     },
   },
