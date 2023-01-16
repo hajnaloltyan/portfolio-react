@@ -18,7 +18,7 @@ export const Work: FC = () => {
         <section className='grid grid-cols-1 lg:grid-cols-2 gap-12'>
           {/* Portfolio */}
           <article
-            className='h-[200px] shadow-lg shadow-[#5155a1] hover:shadow-[#a841a6] container rounded-md flex justify-center items-center mx-auto bg-portfolio-image bg-center bg-no-repeat bg-contain'
+            className='h-[200px] sm:h-[300px] shadow-lg shadow-[#5155a1] hover:shadow-[#a841a6] container rounded-md flex justify-center items-center mx-auto bg-portfolio-image bg-center bg-no-repeat bg-contain'
           >
             <div>
               <div className='text-center'>
@@ -33,7 +33,7 @@ export const Work: FC = () => {
 
           {/* MyBike */}
           <article
-            className='h-[200px] shadow-lg shadow-[#5155a1] hover:shadow-[#a841a6] container rounded-md flex justify-center items-center mx-auto bg-mybike-image bg-center bg-no-repeat bg-contain'
+            className='h-[200px] sm:h-[300px] shadow-lg shadow-[#5155a1] hover:shadow-[#a841a6] container rounded-md flex justify-center items-center mx-auto bg-mybike-image bg-center bg-no-repeat bg-contain'
           >
             <div>
               <div className='text-center'>
@@ -54,7 +54,7 @@ export const Work: FC = () => {
 
           {/* Tic-Tac-Toe */}
           <article
-            className='h-[200px] shadow-lg shadow-[#5155a1] hover:shadow-[#a841a6] container rounded-md flex justify-center items-center mx-auto bg-tictactoe-image bg-center bg-no-repeat bg-contain'
+            className='h-[200px] sm:h-[300px] shadow-lg shadow-[#5155a1] hover:shadow-[#a841a6] container rounded-md flex justify-center items-center mx-auto bg-tictactoe-image bg-center bg-no-repeat bg-contain'
           >
             <div>
               <div className='text-center'>
