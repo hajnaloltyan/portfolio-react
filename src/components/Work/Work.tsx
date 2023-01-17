@@ -58,13 +58,13 @@ export const Work: FC = () => {
           >
             <div>
               <div className='text-center'>
-                <a href='https://hajnaloltyan.github.io/layout_miami/'>
+                <a href='https://hajnaloltyan.github.io/React__tic-tac-toe/'>
                   <button className='rounded-lg px-2 py-1 sm:py-2 m-5 sm:m-10 bg-pink-500 hover:bg-yellow-300 text-black font-bold text-lg'>
                     Demo
                   </button>
                 </a>
 
-                <a href='https://github.com/hajnaloltyan/layout_miami'>
+                <a href='https://github.com/hajnaloltyan/React__tic-tac-toe'>
                   <button className='rounded-lg px-2 py-1 sm:py-2 m-5 sm:m-10 bg-pink-500 hover:bg-yellow-300 text-black font-bold text-lg'>
                     Code
                   </button>

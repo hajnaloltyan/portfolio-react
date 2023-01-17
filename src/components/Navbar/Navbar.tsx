@@ -105,7 +105,7 @@ export const Navbar: FC = () => {
 
         <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] duration-300 bg-pink-700 hover:ml-[-10px]'>
           <a 
-            href='https://drive.google.com/file/d/1mvD1pXQ7yTuaAlwBDg8Feg6qT-41Pk_9/view?usp=sharing'
+            href='https://drive.google.com/file/d/1pZeFhIMXiriHQddqkXUBn_OuXwsz2m4J/view?usp=sharing'
             className='w-full flex justify-between items-center text-white ml-[15px]'
             target='_blank'
             rel="noreferrer"
@@ -153,7 +153,7 @@ export const Navbar: FC = () => {
 
         <li className='h-[50px] flex flex-auto items-center bg-pink-700'>
           <a 
-            href='https://drive.google.com/file/d/1mvD1pXQ7yTuaAlwBDg8Feg6qT-41Pk_9/view?usp=sharing'
+            href='https://drive.google.com/file/d/1pZeFhIMXiriHQddqkXUBn_OuXwsz2m4J/view?usp=sharing'
             className='w-full flex justify-center items-center text-white'
             target='_blank'
             rel="noreferrer"
